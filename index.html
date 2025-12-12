@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="./images/icon.png" />
+    <script src="https://kit.fontawesome.com/2f5aecd1df.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo3.gif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <section class="hero">
+                <div class="hero-left">
+                  <h1>Hi, I'm <span class="highlight">Derara</span> Debisa</h1>
+                </div>
+              
+                <div class="terminal-box">
+                    <p class="typed-line"><span class="prompt">$</span> <span id="typed"></span></p>
+                </div>
+                  
+              </section>
+              
+        </div>
+    </div>
+    <!-------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bcd11.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Derara, a dedicated and results-driven <b>Cloud and Data Engineer</b> and <b>Web Developer</b> with a strong 
+                        background in computer science. My expertise spans <b>cloud computing</b>, <b>infrastructure optimization</b>,
+                        and <b>web development</b>, allowing me to build scalable, efficient solutions across multiple domains. With hands-on 
+                        experience in cloud platforms like <b>Azure</b>, I excel at creating <b>cost-effective</b>, high-performing <b>infrastructure</b> and 
+                        supporting <b>business-critical applications</b>. I thrive in international, cross-functional teams and am always eager 
+                        to learn and tackle new challenges, especially those that drive <b>innovation</b> and contribute to meaningful change. 
+                        Outside of work, I stay updated on the latest in tech, constantly advancing my skills to remain at the forefront of the industry.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cloud Engineer</span><br>Designing, developing, and maintaining cloud-based systems</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Quality Assurance</span><br>Testing software and identifies bugs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2025 </span><br>Freelancer</li>
+                            <li><span>2023 - 2023 </span><br>Functionality Quality Assurance Tester</li>
+                            <li><span>Feb 2019 - Oct 2020</span><br>IT Consultant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>BSc Computer Science from Akademia WSB </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------services---------------------->
+<div class=" services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud Automation</h2>
+                <p>I specialize in designing, developing, and maintaining robust 
+                cloud-based systems that are scalable, secure, and optimized for performance.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create engaging and user-friendly web and app interfaces, 
+                focusing on responsive design and seamless user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <h2>Quality Assurance</h2>
+                <p>With a keen eye for detail, I test software rigorously to identify bugs
+                and ensure high-quality, reliable applications for end-users.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Portfolio Web App</h3>
+                    <p>This is My First Personal Portfolio Website.</p>
+                    <a href="https://personalweb-iota.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coffee.jpeg">
+                <div class="layer">
+                    <h3>Ethiopian Coffee Website</h3>
+                    <p>A Simple Frontend Landing Page for Ethiopian Coffee Website.</p>
+                    <a href="https://ethiocoffee-webapp.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            
+            </div>
+            <div class="work"> 
+                <img src="images/icon1.png"> 
+                <div class="layer"> 
+                    <h3>GeminiAI Clone</h3> 
+                    <p>A Gemini Clone Website.</p> 
+                    <a href="https://gemini-clone-gamma-ebon.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/icon2.png">
+                <div class="layer">
+                    <h3>ToDo List</h3>
+                    <p>A simple Todo List webapp.</p>
+                    <a href="https://todo-list-seven-dusky.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/logo.png">
+                <div class="layer">
+                    <h3>Doctor Appointment Booking Webapp.</h3>
+                    <p>Coming Soon...</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------------contact-------------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> deraramelkamu03@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +48 572-661-885</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://X.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://Instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linked.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="name" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ⓒ Derara.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const textToType = [
+      "whoami",
+      "Derara Debisa",
+      "skills",
+      "☁️ Cloud | 💻 Web Dev | 🔍 QA Testing"
+    ];
+  
+    const typedEl = document.getElementById("typed");
+  
+    let lineIndex = 0;
+    let charIndex = 0;
+  
+    function typeLine() {
+      if (lineIndex < textToType.length) {
+        if (charIndex < textToType[lineIndex].length) {
+          typedEl.innerHTML += textToType[lineIndex][charIndex++];
+          setTimeout(typeLine, 70);
+        } else {
+          typedEl.innerHTML += "<br><span class='prompt'>$</span> ";
+          lineIndex++;
+          charIndex = 0;
+          setTimeout(typeLine, 400);
+        }
+      } else {
+        // 🔁 Restart animation after a short pause
+        setTimeout(() => {
+          typedEl.innerHTML = "<span class='prompt'></span> ";
+          lineIndex = 0;
+          charIndex = 0;
+          typeLine();
+        }, 2000); // wait 2s before restarting
+      }
+    }
+    window.onload = typeLine;
+  </script>
+  
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhrrLTHSoLp-XJ9KBUsZPI0ovJHaPoBS-UQKoKvwcceMJsnlIP2j8a_qZHhWfJLK9r/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { msg.innerHTML = "Message sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
